@@ -1,0 +1,138 @@
+Last login: Tue May 17 11:10:00 on ttys000
+developer-mini-3:~ goekhan$ pwd
+/Users/goekhan
+developer-mini-3:~ goekhan$ cd nfs://192.168.64.2/opt/lampp/htdocs/Choredoor GitHub Projekt
+-bash: cd: nfs://192.168.64.2/opt/lampp/htdocs/Choredoor: No such file or directory
+developer-mini-3:~ goekhan$ ls
+Applications			Music
+Applications (Parallels)	Nextcloud
+Desktop				Parallels
+Documents			Pictures
+Downloads			Public
+Library				eclipse-workspace
+Movies
+developer-mini-3:~ goekhan$ cdnfs://192.168.64.2/opt/lampp/htdocs
+-bash: cdnfs://192.168.64.2/opt/lampp/htdocs: No such file or directory
+developer-mini-3:~ goekhan$ cd user/goekhan/documents
+-bash: cd: user/goekhan/documents: No such file or directory
+developer-mini-3:~ goekhan$ cd goekhan/documents
+-bash: cd: goekhan/documents: No such file or directory
+developer-mini-3:~ goekhan$ cd /Users/goekhan
+developer-mini-3:~ goekhan$ ls
+Applications			Music
+Applications (Parallels)	Nextcloud
+Desktop				Parallels
+Documents			Pictures
+Downloads			Public
+Library				eclipse-workspace
+Movies
+developer-mini-3:~ goekhan$ nextcloud
+-bash: nextcloud: command not found
+developer-mini-3:~ goekhan$ cd/Users/goekhan/nextcloud
+-bash: cd/Users/goekhan/nextcloud: No such file or directory
+developer-mini-3:~ goekhan$ cd /Users/goekhan/Nextcloud
+developer-mini-3:Nextcloud goekhan$ ls
+Nextcloud Manual.pdf	Nextcloud.png		SimpleMind
+Nextcloud intro.mp4	Praktikum Gökhan
+developer-mini-3:Nextcloud goekhan$ cd /Users/goekhan/Documents/choredoor
+developer-mini-3:choredoor goekhan$ ls
+index.html	js.json		style.css
+developer-mini-3:choredoor goekhan$ git init
+Leeres Git-Repository in /Users/goekhan/Documents/choredoor/.git/ initialisiert
+developer-mini-3:choredoor goekhan$ git add .
+developer-mini-3:choredoor goekhan$ git status
+Auf Branch master
+
+Noch keine Commits
+
+Zum Commit vorgemerkte Änderungen:
+  (benutzen Sie "git rm --cached <Datei>..." zum Entfernen aus der Staging-Area)
+	neue Datei:     index.html
+	neue Datei:     js.json
+	neue Datei:     style.css
+
+developer-mini-3:choredoor goekhan$ git commit -m "First commit"
+[master (Root-Commit) 0937717] First commit
+ Committer: Gökhan Celik <goekhan@developer-mini-3.fritz.box>
+Ihr Name und E-Mail Adresse wurden automatisch auf Basis
+Ihres Benutzer- und Rechnernamens konfiguriert. Bitte prüfen Sie, dass
+diese zutreffend sind. Sie können diese Meldung unterdrücken, indem Sie
+diese explizit setzen. Führen Sie dazu den folgenden Befehl aus und folgen
+Sie den Anweisungen in Ihrem Editor, um die Konfigurationsdatei zu bearbeiten:
+
+    git config --global --edit
+
+Nachdem Sie das getan haben, können Sie Ihre Identität für diesen Commit
+ändern mit:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 199 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 js.json
+ create mode 100644 style.css
+developer-mini-3:choredoor goekhan$ git remote add origin https://github.com/GKanCelik/choredoor.git
+developer-mini-3:choredoor goekhan$ git push -u origin master
+Username for 'https://github.com': GKanCelik
+Password for 'https://GKanCelik@github.com':
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentifizierung fehlgeschlagen für 'https://github.com/GKanCelik/choredoor.git/'
+developer-mini-3:choredoor goekhan$ git push u- origin master
+error: Src-Refspec origin entspricht keiner Referenz.
+error: Fehler beim Versenden einiger Referenzen nach 'u-'
+developer-mini-3:choredoor goekhan$ git push -u origin master
+Username for 'https://github.com': GKanCelik
+Password for 'https://GKanCelik@github.com':
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentifizierung fehlgeschlagen für 'https://github.com/GKanCelik/choredoor.git/'
+developer-mini-3:choredoor goekhan$ git push -u origin master
+Username for 'https://github.com': GKanCelik
+Password for 'https://GKanCelik@github.com':
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentifizierung fehlgeschlagen für 'https://github.com/GKanCelik/choredoor.git/'
+developer-mini-3:choredoor goekhan$ git push -u origin master
+Username for 'https://github.com': GKanCelik
+Password for 'https://GKanCelik@github.com':
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentifizierung fehlgeschlagen für 'https://github.com/GKanCelik/choredoor.git/'
+developer-mini-3:choredoor goekhan$
+developer-mini-3:choredoor goekhan$ git push -u origin main
+error: Src-Refspec main entspricht keiner Referenz.
+error: Fehler beim Versenden einiger Referenzen nach 'https://github.com/GKanCelik/choredoor.git'
+developer-mini-3:choredoor goekhan$ echo "# choredoor" >> README.md
+developer-mini-3:choredoor goekhan$ git init
+Bestehendes Git-Repository in /Users/goekhan/Documents/choredoor/.git/ neuinitialisiert
+developer-mini-3:choredoor goekhan$
+developer-mini-3:choredoor goekhan$ git add README.md
+developer-mini-3:choredoor goekhan$ git commit -m "first commit"
+[master d98b233] first commit
+ Committer: Gökhan Celik <goekhan@developer-mini-3.fritz.box>
+Ihr Name und E-Mail Adresse wurden automatisch auf Basis
+Ihres Benutzer- und Rechnernamens konfiguriert. Bitte prüfen Sie, dass
+diese zutreffend sind. Sie können diese Meldung unterdrücken, indem Sie
+diese explizit setzen. Führen Sie dazu den folgenden Befehl aus und folgen
+Sie den Anweisungen in Ihrem Editor, um die Konfigurationsdatei zu bearbeiten:
+
+    git config --global --edit
+
+Nachdem Sie das getan haben, können Sie Ihre Identität für diesen Commit
+ändern mit:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+developer-mini-3:choredoor goekhan$ git branch -M main
+developer-mini-3:choredoor goekhan$ git remote add origin https://github.com/GKanCelik/choredoor.git
+fatal: externes Repository origin existiert bereits
+developer-mini-3:choredoor goekhan$ git push -u origin main
+Username for 'https://github.com': GKanCelik
+Password for 'https://GKanCelik@github.com':
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentifizierung fehlgeschlagen für 'https://github.com/GKanCelik/choredoor.git/'
+developer-mini-3:choredoor goekhan$
